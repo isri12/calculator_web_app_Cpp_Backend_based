@@ -7,17 +7,23 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Define API endpoint for calculation
-app.get('/calculatorexe', (req, res) => {
-//app.get('/calculate', (req, res) => {
-    // Example: Spawn a child process to execute the calculator.cpp executable
-    //const childProcess = spawn('./calculator'); // Assuming the compiled executable is named 'calculator'
-    const childProcess = spawn('./calculatorexe'); // Assuming the compiled executable is named 'calculator'
+
+// app.get('../backend/build/calculatorexe', (req, res) => {
+// //app.get('/calculate', (req, res) => {
+//     // Example: Spawn a child process to execute the calculator.cpp executable
+//     //const childProcess = spawn('./calculator'); // Assuming the compiled executable is named 'calculator'
+//     const childProcess = spawn('./calculatorexe'); // Assuming the compiled executable is named 'calculator'
     
-    // Handle output from the child process
-    childProcess.stdout.on('data', (data) => {
-        const result = data.toString();
-        res.send(result);
-    });
+//     // Handle output from the child process
+//     childProcess.stdout.on('data', (data) => {
+//         const result = data.toString();
+//         res.send(result);
+//     });
+
+// Define routes
+app.get('/', (req, res) => {
+    res.send('Hello, World! This is the backend.');
+  });
 
     // Handle errors from the child process
     childProcess.stderr.on('data', (data) => {
@@ -28,7 +34,7 @@ app.get('/calculatorexe', (req, res) => {
     // Send input data to the child process (if needed)
     // childProcess.stdin.write(req.query.inputData);
     // childProcess.stdin.end();
-});
+// });
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
