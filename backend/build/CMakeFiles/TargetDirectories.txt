@@ -1,0 +1,7 @@
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/CMakeFiles/calculatorexe.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/CMakeFiles/rebuild_cmake.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/CMakeFiles/edit_cache.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/CMakeFiles/rebuild_cache.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/src/CMakeFiles/calc_lib.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/src/CMakeFiles/edit_cache.dir
+/home/isri12/Documents/code/cplusplus/calculator_web_app_Cpp_Backend_based/backend/build/src/CMakeFiles/rebuild_cache.dir
